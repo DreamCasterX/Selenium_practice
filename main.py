@@ -58,7 +58,7 @@ opts.add_experimental_option("detach", True)  # Keep browser open
 
 # 打開網頁
 driver = webdriver.Edge(options=opts, service=Service(executable_path='./msedgedriver.exe'))
-driver.get(url3)
+driver.get(url)
 driver.implicitly_wait(10)  # 10秒內找不到element就報錯NoSuchElementException
 
 
